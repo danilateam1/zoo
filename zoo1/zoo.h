@@ -10,7 +10,7 @@ public:
 	};
 	void print() {
 		for (int i = 0; i < arr.size(); i++) {
-			cout << (*arr[i]).takename() << endl;
+			cout << (*arr[i]).takename() <<"  " << (*arr[i]).id << endl;
 		}
 	}
 	void talk() {
@@ -26,6 +26,11 @@ public:
 		arr.pop_back();
 	};
 
-	void remove(int id) { arr.erase(arr.begin() + (id - 1)); }
-
+	void remove(int a) {
+		for (int i = 0; i < arr.size(); i++) {
+			if (a == (*arr[i]).id) {
+				arr.erase(arr.begin()+i);
+			}
+		}
+	}
 };

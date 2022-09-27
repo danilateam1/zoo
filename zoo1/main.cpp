@@ -23,7 +23,7 @@ int main(){
 	//zoo.removeEnd();
 	zoo.print();
 	cout << "   " << endl;
-zoo.remove(5);
+zoo.remove(1);
 
 	zoo.print();
 

@@ -12,7 +12,7 @@ string takename() {
 	return name;
 	}
 Animal(string name) { this->name = name;
-id=num++;
+id=++num;
 }
 virtual void talk() {};
 };
